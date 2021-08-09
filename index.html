@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Customized TShirts</title>
+
+  <!-- CSS -->
+  <style>
+    .myForm {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 0.8em;
+    width: 25em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    }
+
+    .myForm fieldset {
+    border: none;
+    padding: 0;
+    }
+
+    .myForm legend,
+    .myForm label {
+    padding: 0;
+    font-weight: bold;
+    }
+
+    .myForm label.choice {
+    font-size: 0.9em;
+    font-weight: normal;
+    }
+
+    .myForm textarea {
+    height: 70px;
+    }
+
+
+  </style>
+
+  </head>
+  <body bgcolor="#FFE6E6">
+  <h1 align="center">Order your Custom-made Tee</h1>
+
+  <div align="center" class="form">
+    <form class="myForm" method="get">
+    <br>
+    <label>Name
+    <input type="text" name="customer_name" required>
+    </label>
+    <br>
+    <br>
+    <label>Phone
+    <input type="tel" name="phone_number">
+    </label>
+    <br>
+    <br>
+    <label>Email
+    <input type="email" name="email_address">
+    </label>
+    <br>
+    <br>
+    <fieldset>
+    <label>Size</label>
+    <br>
+    <input type="radio" name="Small" > Small</input>
+    <input type="radio" name="Medium" > Medium</input>
+    <input type="radio" name="Large" > Large</input>
+    </fieldset>
+    <br>
+    <p>
+    <label>Delivery Date and Time
+      <br>
+      <br>
+    <input type="datetime-local" name="delivery_time" required>
+    </label>
+    </p>
+    <br>
+    <label>Addr
+      <input type="text" name="Address">
+    </label>
+    <br><br>
+    <label>City
+      <input type="text" name="state" required list="destinations">
+    </label>
+
+    <datalist id="destinations">
+    <option value="Mumbai">
+    <option value="Delhi">
+    <option value="Pune">
+    </datalist>
+    <br><br>
+    <label>Tag
+      <input type="text" name="tag">
+    </label>
+    <p><button>Place your Order </button></p>
+
+    </form>
+  </div>
+
+
+  </body>
+</html>
